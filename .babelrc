@@ -1,0 +1,15 @@
+{
+    "presets": [
+        "react-app",
+        ["@babel/env", { "targets": { "node": 6 } }]
+    ],
+    "plugins": [
+        "lodash",
+        ["@babel/plugin-proposal-decorators", { "legacy": true }],
+        ["import", {
+          "libraryName": "antd",
+          "libraryDirectory": "es",
+          "style": "css"
+        }]
+    ]
+}
