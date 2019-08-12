@@ -1,6 +1,6 @@
 ;(function(win) {
-  const config = {
+  var config = {
     env: 'development',
   }
   win.config = config
-})(window)
+})(window);

@@ -1,5 +1,5 @@
 {
-  "name": "react-project-template",
+  "name": "react-antd-admin",
   "version": "0.1.0",
   "dependencies": {
     "@babel/core": "7.4.3",
@@ -34,6 +34,7 @@
     "g2-mobile": "^2.2.0-beta.3",
     "html-webpack-plugin": "4.0.0-beta.5",
     "identity-obj-proxy": "3.0.0",
+    "inline-source-webpack-plugin": "https://github.com/soakit/inline-source-webpack-plugin",
     "is-wsl": "^1.1.0",
     "jest": "24.7.1",
     "jest-environment-jsdom-fourteen": "0.1.0",
