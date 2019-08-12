@@ -7,6 +7,8 @@ const webpack = require('webpack');
 const resolve = require('resolve');
 const PnpWebpackPlugin = require('pnp-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin');
+// const HtmlWebpackInlinePlugin = require('html-webpack-inline-plugin');
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
 const InlineChunkHtmlPlugin = require('react-dev-utils/InlineChunkHtmlPlugin');
 const TerserPlugin = require('terser-webpack-plugin');
@@ -526,6 +528,10 @@ module.exports = function(webpackEnv) {
             : undefined
         )
       ),
+      // new HtmlWebpackInlinePlugin(),
+      new ScriptExtHtmlWebpackPlugin({
+        inline: /config/,
+      }),
       // Inlines the webpack runtime script. This script is too small to warrant
       // a network request.
       isEnvProduction &&

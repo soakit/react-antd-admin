@@ -69,9 +69,9 @@
     "workbox-webpack-plugin": "4.2.0"
   },
   "scripts": {
-    "start": "cross-env CUSTOM_ENV=development node scripts/start.js",
-    "build4sit": "cross-env CUSTOM_ENV=sit node scripts/build.js",
-    "build": "cross-env CUSTOM_ENV=production node scripts/build.js",
+    "start": "cross-env node scripts/start.js",
+    "build4sit": "cross-env node scripts/build4sit.js",
+    "build": "cross-env node scripts/build.js",
     "test": "node scripts/test.js"
   },
   "eslintConfig": {
@@ -143,6 +143,7 @@
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^4.2.0",
     "eslint-plugin-compat": "^3.1.1",
+    "html-webpack-inline-plugin": "https://github.com/leaf123/html-webpack-inline-plugin",
     "less": "^3.9.0",
     "less-loader": "^5.0.0",
     "lodash-webpack-plugin": "^0.11.5",
@@ -152,6 +153,7 @@
     "redux-devtools-extension": "^2.13.8",
     "redux-devtools-log-monitor": "^1.4.0",
     "redux-logger": "^3.0.6",
+    "script-ext-html-webpack-plugin": "^2.1.4",
     "webpack-bundle-analyzer": "^3.3.2"
   }
 }

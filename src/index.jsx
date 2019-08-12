@@ -6,6 +6,9 @@ import configureStore from './store/configureStore'
 
 import Root from './containers/Root'
 
+// eslint-disable-next-line import/no-dynamic-require
+require(`./config/config.${process.env.NODE_ENV}`)
+
 const store = configureStore()
 
 render(
