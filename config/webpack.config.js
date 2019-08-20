@@ -499,7 +499,10 @@ module.exports = function(webpackEnv) {
       ],
     },
     plugins: [
-      // new LodashModuleReplacementPlugin,
+      new LodashModuleReplacementPlugin({
+        // 处理rc-form表单验证报错
+        paths: true,
+      }),
       // Generates an `index.html` file with the <script> injected.
       new HtmlWebpackPlugin(
         Object.assign(
